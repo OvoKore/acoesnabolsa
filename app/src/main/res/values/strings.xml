@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Ações na Bolsa</string>
+    <string name="CadastroAcao">Investment registration</string>
+    <string name="DigiteAcao">Enter the name of the investment</string>
+    <string name="Descricao">Description</string>
+    <string name="DigiteDescricao">Enter a description</string>
+    <string name="Tipo">Type</string>
+    <string name="Cadastrar">Register</string>
+    <string-array name="tipos_acoes">
+        <item>Ação</item>
+        <item>FIIs</item>
+    </string-array>
+    <string name="CadastrarOk">Registration completed successfully!</string>
+    <string name="CadastrarFail">Registration cannot be carried out...</string>
+    <string name="Codigo">Code</string>
+    <string name="DigiteCodigo">Type the code</string>
+    <string name="NomeEmpresa">Company Name</string>
+    <string name="DigiteNomeEmpresa">enter the company name</string>
+    <string name="Favorita">Favorite</string>
+    <string name="PreenchaCampos">Fill in all fields</string>
+    <string name="LimparCampos">Clean</string>
+    <string name="Salvar">Save</string>
+    <string name="Excluir">Delete</string>
+    <string name="Acoes">Stocks</string>
+    <string name="Transacoes">Transactions</string>
+    <string name="CadastroTransacao">Transition registration</string>
+    <string name="Acao">Stock</string>
+    <string name="Quantidade">Amount</string>
+    <string name="DigiteQuantidade">Enter a quantity</string>
+    <string name="TipoTransacao">Transaction type</string>
+    <string name="Compra">Purchase</string>
+    <string name="Venda">Sale</string>
+</resources>

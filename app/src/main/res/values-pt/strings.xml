@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Ações na Bolsa</string>
+    <string name="CadastroAcao">Cadastro de ação</string>
+    <string name="DigiteAcao">Digite o nome da ação</string>
+    <string name="Descricao">Descrição</string>
+    <string name="DigiteDescricao">Digite uma descrição</string>
+    <string name="Tipo">Tipo</string>
+    <string name="Cadastrar">Cadastrar</string>
+    <string name="CadastrarOk">Cadastro realizado com sucesso!</string>
+    <string name="CadastrarFail">Cadastro não pode ser realizado...</string>
+    <string-array name="tipos_acoes">
+        <item>Ação</item>
+        <item>FIIs</item>
+    </string-array>
+    <string name="Codigo">Código</string>
+    <string name="DigiteCodigo">Digite o código</string>
+    <string name="NomeEmpresa">Nome da empresa</string>
+    <string name="DigiteNomeEmpresa">digite o Nome da empresa</string>
+    <string name="Favorita">Favorita</string>
+    <string name="PreenchaCampos">Preencha todos os campos</string>
+    <string name="LimparCampos">Limpar</string>
+    <string name="Salvar">Salvar</string>
+    <string name="Excluir">Excluir</string>
+    <string name="Acoes">Ações</string>
+    <string name="Transacoes">Transações</string>
+    <string name="CadastroTransacao">Cadastro da transação</string>
+    <string name="Acao">Ação</string>
+    <string name="Quantidade">Quantidade</string>
+    <string name="DigiteQuantidade">Digite uma quantidade</string>
+    <string name="TipoTransacao">Tipo transação</string>
+    <string name="Compra">Compra</string>
+    <string name="Venda">Venda</string>
+</resources>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AcaoCadastroActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/CadastroAcao"
+                android:textSize="24sp"
+                android:textColor="@color/primary"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Codigo"
+                android:textSize="18sp"/>
+
+            <EditText
+                android:id="@+id/editTextCodigoAcao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/DigiteCodigo"
+                android:inputType="text"
+                android:layout_marginBottom="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/NomeEmpresa"
+                android:textSize="18sp"/>
+
+            <EditText
+                android:id="@+id/editTextNomeEmpresa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/DigiteNomeEmpresa"
+                android:inputType="text"
+                android:layout_marginBottom="16dp"/>
+
+            <CheckBox
+                android:id="@+id/checkBoxFavorita"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Favorita"
+                android:textSize="18sp"
+                android:layout_marginTop="16dp"
+                android:checked="false"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Tipo"
+                android:textSize="18sp"
+                android:layout_marginTop="16dp"/>
+
+            <Spinner
+                android:id="@+id/spinnerTipo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Descricao"
+                android:textSize="18sp"/>
+
+            <EditText
+                android:id="@+id/editTextDescricaoAcao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/DigiteDescricao"
+                android:inputType="textMultiLine"
+                android:minLines="3"
+                android:layout_marginBottom="16dp"/>
+
+            <Button
+                android:id="@+id/btnLimparAcao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/LimparCampos"
+                android:background="@color/button"
+                android:textColor="@color/background"
+                android:layout_marginTop="16dp"/>
+
+            <Button
+                android:id="@+id/btnCadastrarAcao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Cadastrar"
+                android:background="@color/primary"
+                android:textColor="@color/background"
+                android:layout_marginTop="16dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

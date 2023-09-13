@@ -1,0 +1,9 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.AcoesNaBolsa" parent="Theme.Material3.Light">
+        <!-- Customize your light theme here. -->
+         <item name="colorPrimary">@color/primary</item>
+    </style>
+
+    <style name="Theme.AcoesNaBolsa" parent="Base.Theme.AcoesNaBolsa" />
+</resources>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TransacaoCadastroActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/CadastroTransacao"
+                android:textSize="24sp"
+                android:textColor="@color/primary"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="16dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Acao"
+                android:textSize="18sp" />
+
+            <Spinner
+                android:id="@+id/spinnerAcao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Quantidade"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/editTextQuantidade"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/DigiteQuantidade"
+                android:inputType="number"
+                android:layout_marginBottom="16dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/TipoTransacao"
+                android:textSize="18sp" />
+
+            <RadioGroup
+                android:id="@+id/radioGroupTipoTransacao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="16dp">
+
+                <RadioButton
+                    android:id="@+id/radioButtonCompra"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Compra" />
+
+                <RadioButton
+                    android:id="@+id/radioButtonVenda"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Venda" />
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/btnLimparTransacao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/LimparCampos"
+                android:background="@color/button"
+                android:textColor="@color/background"
+                android:layout_marginTop="16dp"/>
+
+            <Button
+                android:id="@+id/btnCadastrarTransacao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Cadastrar"
+                android:background="@color/primary"
+                android:textColor="@color/background"
+                android:layout_marginTop="16dp" />
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
