@@ -6,12 +6,19 @@
     tools:context=".TransacaoListaActivity">
 
 
-    <Button
-        android:id="@+id/btnTransacaoCadastro"
+<!--    <Button-->
+<!--        android:id="@+id/btnTransacaoCadastro"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="@string/Transacoes"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:layout_marginTop="100dp"/>-->
+
+    <ListView
+        android:id="@+id/listViewAcoes"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/Transacoes"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="100dp"/>
+        tools:listitem="@layout/list_item_transacao"
+        />
 
 </RelativeLayout>
