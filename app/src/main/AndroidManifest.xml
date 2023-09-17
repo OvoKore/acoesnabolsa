@@ -13,7 +13,7 @@
         android:theme="@style/Theme.AcoesNaBolsa"
         tools:targetApi="31">
         <activity
-            android:name=".MainActivity"
+            android:name=".activity.Main"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -22,35 +22,48 @@
         </activity>
 
         <activity
-            android:name=".AcaoListaActivity"
-            android:parentActivityName=".MainActivity">
+            android:name=".activity.AcaoList"
+            android:label="@string/AcaoLista"
+            android:parentActivityName=".activity.Main">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".AcaoListaActivity" />
+                android:value=".activity.AcaoList" />
         </activity>
 
         <activity
-            android:name=".AcaoCadastroActivity"
-            android:parentActivityName=".AcaoListaActivity">
+            android:name=".activity.AcaoForm"
+            android:label="@string/Acao"
+            android:parentActivityName=".activity.AcaoList">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".AcaoCadastroActivity" />
+                android:value=".activity.AcaoForm" />
         </activity>
 
         <activity
-            android:name=".TransacaoListaActivity"
-            android:parentActivityName=".MainActivity">
+            android:name=".activity.TransacaoList"
+            android:label="@string/TransacaoLista"
+            android:parentActivityName=".activity.Main">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".TransacaoListaActivity" />
+                android:value=".activity.TransacaoList" />
         </activity>
 
         <activity
-            android:name=".TransacaoCadastroActivity"
-            android:parentActivityName=".TransacaoListaActivity">
+            android:name=".activity.TransacaoForm"
+            android:label="@string/Transacao"
+            android:parentActivityName=".activity.TransacaoList">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".TransacaoCadastroActivity" />
+                android:value=".activity.TransacaoForm" />
+        </activity>
+
+        <activity
+            android:name=".activity.Sobre"
+            android:label="@string/Sobre"
+            android:parentActivityName=".activity.Main">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activity.Sobre" />
         </activity>
 
     </application>

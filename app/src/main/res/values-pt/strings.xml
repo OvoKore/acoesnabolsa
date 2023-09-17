@@ -1,5 +1,4 @@
 <resources>
-    <string name="app_name">Ações na Bolsa</string>
     <string name="CadastroAcao">Cadastro de ação</string>
     <string name="DigiteAcao">Digite o nome da ação</string>
     <string name="Descricao">Descrição</string>
@@ -30,4 +29,15 @@
     <string name="TipoTransacao">Tipo transação</string>
     <string name="Compra">Compra</string>
     <string name="Venda">Venda</string>
+    <string name="Sobre">Sobre</string>
+    <string name="AcaoLista">Lista de ações</string>
+    <string name="TransacaoLista">Lista de transações</string>
+    <string name="Transacao">Transação</string>
+    <string name="adicionar">Adicionar</string>
+    <string name="NotDelete">Não é possível excluir sem salvar primeiro</string>
+    <string name="Erro">Erro</string>
+    <string name="ConfirmDelete">Confirmar Exclusão</string>
+    <string name="ConfirmDeleteMessage">Tem certeza de que deseja excluir este item?</string>
+    <string name="Cancelar">Cancelar</string>
+    <string name="StarPreference">Ordenar por estrela</string>
 </resources>

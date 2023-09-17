@@ -5,8 +5,14 @@
     android:layout_height="wrap_content"
     android:padding="16dp">
 
+    <ImageView
+        android:id="@+id/imageViewFavorita"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@android:drawable/btn_star" />
+
     <TextView
-        android:id="@+id/textViewCodigoAcao"
+        android:id="@+id/textViewCodigo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="18sp"
@@ -25,11 +31,5 @@
         android:layout_height="wrap_content"
         android:textSize="16sp"
         android:textColor="@color/primary" />
-
-    <ImageView
-        android:id="@+id/imageViewFavorita"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@android:drawable/btn_star" />
 
 </LinearLayout>

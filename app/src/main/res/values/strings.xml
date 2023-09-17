@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Ações na Bolsa</string>
+    <string name="app_name" translatable="false">Ações na Bolsa</string>
     <string name="CadastroAcao">Investment registration</string>
     <string name="DigiteAcao">Enter the name of the investment</string>
     <string name="Descricao">Description</string>
@@ -30,4 +30,20 @@
     <string name="TipoTransacao">Transaction type</string>
     <string name="Compra">Purchase</string>
     <string name="Venda">Sale</string>
+    <string name="nome_universidade" translatable="false">UTFPR</string>
+    <string name="nome_aluno_valor" translatable="false">Gustavo Frazão Pereira Olivier</string>
+    <string name="email_valor" translatable="false">gustavoolivier@alunos.utfpr.edu.br</string>
+    <string name="curso_valor" translatable="false">Pós Java</string>
+    <string name="descricao_aplicativo_valor" translatable="false">O aplicativo de Controle de Investimentos em Ações e FIIs na B3 auxiliará os investidores a gerenciar e seus investimentos.  Este aplicativo será voltado para uso pessoal, permitindo que os usuários cadastrem as suas ações para não ter risco de complicar com o leão da receita.</string>
+    <string name="Sobre">About</string>
+    <string name="AcaoLista">Stock list</string>
+    <string name="TransacaoLista">Transaction list</string>
+    <string name="Transacao">Transaction</string>
+    <string name="adicionar">Add</string>
+    <string name="NotDelete">Can\'t delete without saving first</string>
+    <string name="Erro">Error</string>
+    <string name="ConfirmDelete">Confirm deletion</string>
+    <string name="ConfirmDeleteMessage">Are you sure you want to delete this item?</string>
+    <string name="Cancelar">Cancel</string>
+    <string name="StarPreference">Sort by star</string>
 </resources>

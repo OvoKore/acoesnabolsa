@@ -1,13 +1,18 @@
 package com.ovokore.acoesnabolsa.model;
 
+import static com.ovokore.acoesnabolsa.utils.GlobalValues.ACAO;
+import static com.ovokore.acoesnabolsa.utils.GlobalValues.CODIGO;
+
 import androidx.room.Entity;
 import androidx.room.Index;
 import androidx.room.PrimaryKey;
 
-@Entity(tableName = "acao",
-        indices = {@Index(value = {"codigo"}, unique = true)}
+import java.io.Serializable;
+
+@Entity(tableName = ACAO,
+        indices = {@Index(value = {CODIGO}, unique = true)}
 )
-public class Acao {
+public class Acao implements Serializable {
 
     @PrimaryKey(autoGenerate = true)
     private long id;
@@ -21,6 +26,10 @@ public class Acao {
     private boolean favorita;
 
     private String descricao;
+
+    public Acao() {
+
+    }
 
     public Acao(String codigo, String nomeEmpresa, String tipo, boolean favorita, String descricao) {
         this.codigo = codigo;

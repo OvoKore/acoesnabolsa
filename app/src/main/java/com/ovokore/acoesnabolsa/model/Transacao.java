@@ -1,19 +1,25 @@
 package com.ovokore.acoesnabolsa.model;
 
+import static com.ovokore.acoesnabolsa.utils.GlobalValues.ID;
+import static com.ovokore.acoesnabolsa.utils.GlobalValues.ID_ACAO;
+import static com.ovokore.acoesnabolsa.utils.GlobalValues.TRANSACAO;
+
 import androidx.room.Entity;
 import androidx.room.ForeignKey;
 import androidx.room.PrimaryKey;
 
+import java.io.Serializable;
+
 @Entity(
-        tableName = "transacao",
+        tableName = TRANSACAO,
         foreignKeys = @ForeignKey(
                 entity = Acao.class,
-                parentColumns = "id",
-                childColumns = "id_acao",
+                parentColumns = ID,
+                childColumns = ID_ACAO,
                 onDelete = ForeignKey.CASCADE
         )
 )
-public class Transacao {
+public class Transacao implements Serializable {
 
     @PrimaryKey(autoGenerate = true)
     private long id;
@@ -22,9 +28,13 @@ public class Transacao {
 
     private int quantidade;
 
-    private String tipoTransacao;
+    private int tipoTransacao;
 
-    public Transacao(long id_acao, int quantidade, String tipoTransacao) {
+    public Transacao() {
+
+    }
+
+    public Transacao(long id_acao, int quantidade, int tipoTransacao) {
         this.id_acao = id_acao;
         this.quantidade = quantidade;
         this.tipoTransacao = tipoTransacao;
@@ -54,11 +64,11 @@ public class Transacao {
         this.quantidade = quantidade;
     }
 
-    public String getTipoTransacao() {
+    public int getTipoTransacao() {
         return tipoTransacao;
     }
 
-    public void setTipoTransacao(String tipoTransacao) {
+    public void setTipoTransacao(int tipoTransacao) {
         this.tipoTransacao = tipoTransacao;
     }
 }

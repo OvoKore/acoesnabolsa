@@ -3,23 +3,32 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".activity.Main">
 
     <Button
         android:id="@+id/btnAcao"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/Acoes"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="100dp"/>
+        android:layout_marginTop="50dp"
+        android:text="@string/Acoes" />
 
     <Button
         android:id="@+id/btnTransacao"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/Transacoes"
         android:layout_below="@id/btnAcao"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="20dp"/>
+        android:layout_marginTop="20dp"
+        android:text="@string/Transacoes" />
+
+    <Button
+        android:id="@+id/btnSobre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnTransacao"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="@string/Sobre" />
 
 </RelativeLayout>
